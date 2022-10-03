@@ -1,0 +1,18 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-colors: (
+    "color1": #3498DB
+);
+$theme-colors: (
+    "primary": #3498DB
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss"
